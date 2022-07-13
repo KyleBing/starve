@@ -1,0 +1,48 @@
+.tabbar{
+  z-index: $z-top;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-flow: row nowrap;
+  display: flex;
+  border-bottom: 1px solid $color-border;
+}
+
+.tab{
+  &-btn{
+    cursor: pointer;
+    flex-grow: 1;
+    display: block;
+    height: $tabbar-height;
+    line-height: $tabbar-height;
+    text-align: center;
+    -webkit-background-size: 40px;
+    background-size: 40px;
+    background: #eeeeee center center/40px no-repeat;
+    &:hover, &:active{
+      background-color: #fafafa;
+    }
+    &.active{
+      color: $blue;
+    }
+  }
+  &-index{
+    background-image: url('@/assets/img/tabicon/tab_home@2x.png');
+    &.router-link-active{
+      background-image: url('@/assets/img/tabicon/tab_home_active@2x.png');
+    }
+  }
+  &-craft{
+    background-image: url('@/assets/img/tabicon/tab_make@2x.png');
+    &.router-link-active{
+      background-image: url('@/assets/img/tabicon/tab_make_active@2x.png');
+    }
+  }
+  &-mine{
+    background-image: url('@/assets/img/tabicon/tab_mine@2x.png');
+    &.router-link-active{
+      background-image: url('@/assets/img/tabicon/tab_mine_active@2x.png');
+    }
+  }
+}

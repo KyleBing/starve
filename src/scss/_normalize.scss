@@ -1,0 +1,59 @@
+.text-left{text-align: left !important;}
+.text-right{text-align: right !important;}
+.text-center{text-align: center !important;}
+
+.magenta  {color: $magenta !important;}
+.red      {color: $red !important;}
+.orange   {color: $orange !important;}
+.yellow   {color: $yellow !important;}
+.green    {color: $green !important;}
+.syan     {color: $syan !important;}
+.blue     {color: $blue !important;}
+.purple   {color: $purple !important;}
+.gray     {color: $gray !important;}
+.white     {color: white !important;}
+
+
+.bg-magenta  {color: white; background-color: $magenta !important;}
+.bg-red      {color: white; background-color: $red !important;}
+.bg-orange   {color: white; background-color: $orange !important;}
+.bg-yellow   {color: white; background-color: $yellow !important;}
+.bg-green    {color: white; background-color: $green !important;}
+.bg-syan     {color: white; background-color: $syan !important;}
+.bg-blue     {color: white; background-color: $blue !important;}
+.bg-purple   {color: white; background-color: $purple !important;}
+.bg-gray     {color: white; background-color: $gray !important;}
+
+
+.justify-content-start{justify-content: start}
+.justify-content-end{justify-content: end}
+.justify-content-space-between{justify-content: space-between}
+.justify-content-space-around{justify-content: space-around}
+
+.w-1p{width: 10% !important;}
+.w-2p{width: 20% !important;}
+.w-3p{width: 30% !important;}
+.w-4p{width: 40% !important;}
+.w-5p{width: 50% !important;}
+.w-6p{width: 60% !important;}
+.w-7p{width: 70% !important;}
+.w-8p{width: 80% !important;}
+.w-9p{width: 90% !important;}
+.w-10p{width: 100% !important;}
+
+.row{
+  display: flex;
+}
+
+
+body{
+  position: relative;
+}
+
+.hidden{display: none !important;}
+.show{display: block !important;}
+
+
+.round{
+  @include border-radius();
+}

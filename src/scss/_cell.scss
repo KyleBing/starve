@@ -1,0 +1,103 @@
+$height-index-cell: 60px;
+
+.index-item{
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid $color-border;
+  @include border-radius(8px);
+  margin-bottom: 12px;
+  width: 47%;
+  margin-right: 6%;
+  float: left;
+  &:nth-child(2n+0){
+    margin-right: 0;
+  }
+  &:hover, &:active {
+    border-color: $color-border-active;
+    background-color: #fafafa;
+  }
+  .icon-container{
+    width: 50%;
+    height: $height-index-cell;
+    display: block;
+    float: left;
+    img{
+      height: $height-index-cell;
+      padding: 5px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .title{
+    width: 50%;
+    font-weight: normal;
+    text-align: center;
+    color: $text-main;
+    line-height: $height-index-cell;
+    margin-left: 33%;
+    font-size: 1.1em;
+  }
+}
+.version-icon{
+  @include unselectable;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  height: 25px;
+  width: 25px;
+  display: block;
+}
+
+
+//ITEM CELL
+
+$height-cell-item: 60px;
+$col-item-list: 4;
+$cell-item-margin-right: 3.5%;
+$cell-item-width: #{(100% - $cell-item-margin-right * 3) / 4};
+
+.content-item{
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid $color-border;
+  @include border-radius(10px);
+  margin-bottom: 13px;
+  width: $cell-item-width;
+  margin-right: $cell-item-margin-right;
+  float: left;
+  &:nth-child(4n+0){
+    margin-right: 0;
+  }
+  &:hover, &:active {
+    border-color: $color-border-active;
+    background-color: #fafafa;
+  }
+  .icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 5px;
+    height: $height-cell-item;
+    width: 100%;
+    vertical-align: middle;
+    img{
+      max-height: 100%;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .title{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 3px;
+    font-weight: normal;
+    text-align: center;
+    color: $text-main;
+    font-size: 0.75em;
+  }
+}

@@ -1,0 +1,108 @@
+
+.character{
+
+}
+.character-info{
+  border-bottom: 1px solid $color-border;
+  display: flex;
+  .pic-wrapper{
+    padding: 20px;
+    img{
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  .name-wrapper{
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    .name{
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $text-main;
+    }
+    .name-en{
+      font-size: .8rem;
+      font-weight: normal;
+      color: $text-subtitle;
+      margin-bottom: 20px;
+    }
+    .perk{
+      font-size: .8rem;
+      line-height: 1.5;
+      color: $text-main;
+    }
+  }
+}
+
+.character-attr{
+  background-color: white;
+  border-bottom: 1px solid $color-border;
+  padding: 20px 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  .item{
+    margin-right: 5px;
+    &:last-child{
+      margin-right: 0;
+    }
+    img{
+      margin: 0 auto;
+      margin-bottom: 10px;
+      display: block;
+      width: 30px;
+    }
+    h4{
+      font-size: 1.1rem;
+      color: $text-main;
+      line-height: 1.5;
+      text-align: center;
+    }
+  }
+}
+
+.debug-spawn{
+  padding: 15px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  border-bottom: 1px solid $color-border;
+  div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    img{
+      height: 25px;
+      display: block;
+    }
+    h5{
+      padding-left: 15px;
+      line-height: 25px;
+      font-size: 1rem;
+      color: $text-main;
+    }
+  }
+}
+.extra{
+  padding: 20px;
+  background-color: white;
+  border-bottom: 1px solid $color-border;
+
+  td{
+    padding: 5px;
+  }
+  .value-title{
+    text-align: center;
+    font-size: 1rem;
+    color: $text-main;
+    font-weight: bold;
+  }
+  .value-content{
+    font-size: .8rem;
+    color: $text-second;
+  }
+
+}

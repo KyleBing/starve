@@ -1,0 +1,37 @@
+@import 'variables';
+@import 'reset';
+@import 'utility';
+@import "normalize";
+@import 'mixin';
+@import "gutter";
+
+
+
+body{
+  background: #fff url('@/assets/img/bg_paper.png') 0 0 repeat;
+}
+
+
+.index{
+  padding: 12px;
+  @include clearfix;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+.content{
+  padding-top: $tabbar-height;
+}
+
+.half{
+  width: 50%;
+}
+
+
+
+
+
+
